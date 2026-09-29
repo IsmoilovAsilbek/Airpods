@@ -1,0 +1,206 @@
+@import url(../fonts.css);
+
+.main {
+    background: #1b1b1b;
+    padding-bottom: 50px;
+}
+
+/* WHITE SECTION */
+
+.white-airpods__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.white-airpods__text {
+    max-width: 540px;
+    color: #fff;
+    font-family: 'ML';
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.white-airpods__image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* BLACK SECTION */
+
+.black-airpods__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.black-airpods__photo {
+    max-width: 100%;
+    height: auto;
+}
+
+.black-airpods__text {
+    max-width: 540px;
+    color: #fff;
+    font-family: 'ML';
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+
+/* GREY SECTION */
+
+.grey-bottom__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+    padding: 40px 0 70px;
+}
+
+.bottom-left__text {
+    max-width: 333px;
+    width: 100%;
+    color: #fff;
+    text-align: right;
+    font-family: 'MB';
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.bottom-right__text {
+    max-width: 333px;
+    width: 100%;
+    color: #fff;
+    font-family: 'MB';
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.bottom-center__image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* LINES */
+
+.bottom-left__text::after {
+    display: block;
+    content: '';
+    width: 61px;
+    height: 1px;
+    background: #c4c4c4;
+    left: 355px;
+    bottom: 250px;
+    position: absolute;
+}
+
+.bottom-right__text::before {
+    display: block;
+    content: '';
+    width: 61px;
+    height: 1px;
+    background: #c4c4c4;
+    left: 710px;
+    top: 190px;
+    position: absolute;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1150px) {
+
+    .white-airpods__box,
+    .black-airpods__info,
+    .grey-bottom__box {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .grey-bottom__box {
+        flex-direction: column;
+    }
+
+    .bottom-left__text,
+    .bottom-right__text {
+        max-width: 500px;
+        text-align: center;
+    }
+}
+
+
+/* TABLET / PHONE */
+
+@media (max-width: 890px) {
+
+    .white-airpods__box {
+        flex-direction: column;
+        row-gap: 30px;
+        text-align: center;
+    }
+
+    .white-airpods__text {
+        max-width: 700px;
+        text-align: center;
+    }
+
+    .black-airpods__info {
+        flex-direction: column;
+        row-gap: 30px;
+        text-align: center;
+    }
+
+    .black-airpods__text {
+        max-width: 700px;
+        text-align: center;
+    }
+
+    .bottom-left__text,
+    .bottom-right__text {
+        max-width: 700px;
+        text-align: center;
+    }
+
+    .bottom-left__text::after,
+    .bottom-right__text::before {
+        display: none;
+    }
+}
+
+
+/* PHONE */
+
+@media (max-width: 600px) {
+
+    .white-airpods__box,
+    .black-airpods__info,
+    .grey-bottom__box {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .white-airpods__text,
+    .black-airpods__text {
+        font-size: 18px;
+    }
+
+    .bottom-left__text,
+    .bottom-right__text {
+        font-size: 17px;
+    }
+
+    .white-airpods__image,
+    .black-airpods__photo,
+    .bottom-center__image {
+        max-width: 100%;
+        height: auto;
+    }
+}

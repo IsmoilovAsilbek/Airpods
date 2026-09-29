@@ -1,0 +1,70 @@
+@import url(../style/fonts.css);
+
+.footer {
+    display: flex;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+    background: #282828;
+}
+
+.footer-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 15px;
+}
+
+.footer-list__link {
+    font-family: 'MB';
+    font-size: 20px;
+    color: #fff;
+    margin: 15px;
+}
+
+.footer-end__list {
+    display: flex;
+    column-gap: 20px;
+}
+
+.footer-end__icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-icons {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* TABLET */
+
+@media (max-width: 800px) {
+    .footer-box {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+}
+
+
+/* PHONE */
+
+@media (max-width: 520px) {
+    .footer-end__box {
+        padding-bottom: 5px;
+    }
+
+    .footer-end__list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-list__link {
+        font-size: 18px;
+        margin: 5px;
+    }
+
+    .footer-end__icons {
+        gap: 15px;
+    }
+}

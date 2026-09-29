@@ -1,0 +1,80 @@
+@import url(../fonts.css);
+
+.phone-panel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.phone-panel__items {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 6px;
+}
+
+.phone-items__title {
+    font-family: 'MB';
+    font-size: 20px;
+    color: #000;
+}
+
+.phone-items__image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.phone-items__text {
+    font-family: 'MR';
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000;
+    padding: 20px 5px;
+}
+
+.phone-items__icon {
+    display: inline-block;
+    padding: 5px 35px;
+    border-radius: 5px;
+    background: #000;
+    font-family: 'MB';
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+    .phone-panel {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* PHONE */
+
+@media (max-width: 600px) {
+    .phone-panel {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .phone-panel__items {
+        padding: 20px 15px;
+    }
+}
+
+
+/* SMALL PHONE */
+
+@media (max-width: 376px) {
+    .phone-items__icon {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
